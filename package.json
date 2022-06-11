@@ -1,0 +1,62 @@
+{
+  "name": "package-name",
+  "version": "0.0.0",
+  "description": "",
+  "repository": "danielroe/package-name",
+  "license": "MIT",
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "dev": "vitest dev",
+    "lint": "pnpm lint:all:eslint && pnpm lint:all:prettier",
+    "lint:all:eslint": "pnpm lint:eslint --ext .ts,.js,.mjs,.cjs .",
+    "lint:all:prettier": "pnpm lint:prettier \"{src,test}/**/*.{js,json,ts}\"",
+    "lint:eslint": "eslint --fix",
+    "lint:prettier": "prettier --write --loglevel warn",
+    "prepare": "husky install && pnpm build",
+    "prepublishOnly": "pnpm lint && pnpm test && pinst --disable",
+    "release": "release-it",
+    "test": "vitest run",
+    "postinstall": "husky install",
+    "postpublish": "pinst --enable"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config-typescript": "latest",
+    "@release-it/conventional-changelog": "latest",
+    "@types/node": "latest",
+    "c8": "latest",
+    "conventional-changelog-conventionalcommits": "latest",
+    "eslint": "latest",
+    "eslint-config-prettier": "latest",
+    "eslint-plugin-prettier": "latest",
+    "expect-type": "latest",
+    "husky": "latest",
+    "lint-staged": "latest",
+    "pinst": "latest",
+    "prettier": "latest",
+    "release-it": "latest",
+    "typescript": "latest",
+    "unbuild": "latest",
+    "vitest": "latest"
+  },
+  "resolutions": {
+    "package-name": "link:."
+  },
+  "packageManager": "pnpm@7.1.5",
+  "volta": {
+    "node": "16.15.1"
+  }
+}
