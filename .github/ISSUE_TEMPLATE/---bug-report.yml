@@ -15,7 +15,7 @@ body:
       required: true
     attributes:
       label: 🛠️ To reproduce
-      description: A reproduction of the bug via https://stackblitz.com/github/danielroe/package-name/tree/playground
+      description: A reproduction of the bug via https://stackblitz.com/github/danielroe/package-name/tree/main/playground
       placeholder: https://stackblitz.com/[...]
   - type: textarea
     validations:
