@@ -50,6 +50,7 @@
     "release-it": "latest",
     "typescript": "latest",
     "unbuild": "latest",
+    "vite": "latest",
     "vitest": "latest"
   },
   "resolutions": {
