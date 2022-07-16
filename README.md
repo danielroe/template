@@ -45,7 +45,7 @@ Published under [MIT License](./LICENCE).
 [npm-version-href]: https://npmjs.com/package/package-name
 [npm-downloads-src]: https://img.shields.io/npm/dm/package-name?style=flat-square
 [npm-downloads-href]: https://npmjs.com/package/package-name
-[github-actions-src]: https://img.shields.io/github/workflow/status/unjs/package-name/ci/main?style=flat-square
-[github-actions-href]: https://github.com/unjs/package-name/actions?query=workflow%3Aci
-[codecov-src]: https://img.shields.io/codecov/c/gh/unjs/package-name/main?style=flat-square
-[codecov-href]: https://codecov.io/gh/unjs/package-name
+[github-actions-src]: https://img.shields.io/github/workflow/status/danielroe/package-name/ci/main?style=flat-square
+[github-actions-href]: https://github.com/danielroe/package-name/actions?query=workflow%3Aci
+[codecov-src]: https://img.shields.io/codecov/c/gh/danielroe/package-name/main?style=flat-square
+[codecov-href]: https://codecov.io/gh/danielroe/package-name
