@@ -56,7 +56,7 @@
   "resolutions": {
     "package-name": "link:."
   },
-  "packageManager": "pnpm@8.6.3",
+  "packageManager": "pnpm@8.6.5",
   "volta": {
     "node": "18.16.1"
   }
