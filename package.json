@@ -1,19 +1,17 @@
 {
   "name": "package-name",
-  "version": "0.0.0",
-  "description": "",
-  "repository": "danielroe/package-name",
-  "license": "MIT",
-  "sideEffects": false,
   "type": "module",
+  "version": "0.0.0",
+  "packageManager": "pnpm@8.15.1",
+  "description": "",
+  "license": "MIT",
+  "repository": "danielroe/package-name",
+  "sideEffects": false,
   "exports": {
-    ".": {
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs"
-    }
+    ".": "./dist/index.js"
   },
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.mjs",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
     "dist"
@@ -21,33 +19,22 @@
   "scripts": {
     "build": "unbuild",
     "dev": "vitest dev",
-    "lint": "pnpm lint:all:eslint && pnpm lint:all:prettier",
-    "lint:all:eslint": "pnpm lint:eslint --ext .ts,.js,.mjs,.cjs .",
-    "lint:all:prettier": "pnpm lint:prettier \"{src,test}/**/*.{js,json,ts}\"",
-    "lint:eslint": "eslint --fix",
-    "lint:prettier": "prettier --write --log-level warn",
-    "prepare": "husky install && pnpm build",
-    "prepublishOnly": "pnpm lint && pnpm test && pinst --disable",
+    "lint": "eslint . --fix",
+    "prepare": "simple-git-hooks",
+    "prepack": "pnpm build",
+    "prepublishOnly": "pnpm lint && pnpm test",
     "release": "release-it",
-    "test": "vitest run",
-    "postinstall": "husky install",
-    "postpublish": "pinst --enable"
+    "test": "pnpm test:unit && pnpm test:types",
+    "test:unit": "vitest",
+    "test:types": "tsc --noEmit"
   },
   "devDependencies": {
-    "@nuxtjs/eslint-config-typescript": "latest",
-    "@release-it/conventional-changelog": "latest",
-    "@types/node": "latest",
-    "c8": "latest",
-    "conventional-changelog-conventionalcommits": "latest",
+    "@antfu/eslint-config": "latest",
+    "@types/node": "20.x",
+    "@vitest/coverage-v8": "latest",
     "eslint": "latest",
-    "eslint-config-prettier": "latest",
-    "eslint-plugin-prettier": "latest",
-    "expect-type": "latest",
-    "husky": "latest",
     "lint-staged": "latest",
-    "pinst": "latest",
-    "prettier": "latest",
-    "release-it": "latest",
+    "simple-git-hooks": "latest",
     "typescript": "latest",
     "unbuild": "latest",
     "vite": "latest",
@@ -56,8 +43,12 @@
   "resolutions": {
     "package-name": "link:."
   },
-  "packageManager": "pnpm@8.14.1",
-  "volta": {
-    "node": "20.11.0"
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,ts,mjs,cjs,json,.*rc}": [
+      "pnpm eslint --fix"
+    ]
   }
 }

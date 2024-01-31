@@ -15,9 +15,6 @@ Install package:
 # npm
 npm install package-name
 
-# yarn
-yarn install package-name
-
 # pnpm
 pnpm install package-name
 ```

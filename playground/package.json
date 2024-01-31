@@ -1,7 +1,8 @@
 {
+  "type": "module",
   "private": true,
   "scripts": {
-    "dev": "node index.mjs"
+    "dev": "node index.js"
   },
   "dependencies": {
     "package-name": "latest"

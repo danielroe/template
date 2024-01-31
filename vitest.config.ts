@@ -1,11 +1,11 @@
 import { fileURLToPath } from 'node:url'
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vitest/config'
 
 export default defineConfig({
   resolve: {
     alias: {
       'package-name': fileURLToPath(
-        new URL('./src/index.ts', import.meta.url).href
+        new URL('./src/index.ts', import.meta.url).href,
       ),
     },
   },

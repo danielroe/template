@@ -13,38 +13,38 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - run: corepack enable
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
-          node-version: 18
-          cache: "pnpm"
+          node-version: 20
+          cache: pnpm
 
       - name: 📦 Install dependencies
         run: pnpm install --frozen-lockfile
 
       - name: 🔠 Lint project
-        run: pnpm run lint
+        run: pnpm lint
 
   test:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - run: corepack enable
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
-          node-version: 18
-          cache: "pnpm"
+          node-version: 20
+          cache: pnpm
 
       - name: 📦 Install dependencies
         run: pnpm install --frozen-lockfile
 
       - name: 🛠 Build project
-        run: pnpm run build
+        run: pnpm build
 
       - name: 🧪 Test project
-        run: pnpm run test -- --coverage
+        run: pnpm test -- --coverage
 
       - name: 🟩 Coverage
         uses: codecov/codecov-action@v3
