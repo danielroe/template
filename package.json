@@ -2,7 +2,7 @@
   "name": "package-name",
   "type": "module",
   "version": "0.0.0",
-  "packageManager": "pnpm@8.15.1",
+  "packageManager": "pnpm@9.4.0",
   "description": "",
   "license": "MIT",
   "repository": "danielroe/package-name",
@@ -30,7 +30,6 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "latest",
-    "@types/node": "20.11.16",
     "@vitest/coverage-v8": "latest",
     "bumpp": "latest",
     "eslint": "latest",
