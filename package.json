@@ -2,7 +2,7 @@
   "name": "package-name",
   "type": "module",
   "version": "0.0.0",
-  "packageManager": "pnpm@9.4.0",
+  "packageManager": "pnpm@9.12.2",
   "description": "",
   "license": "MIT",
   "repository": "danielroe/package-name",
