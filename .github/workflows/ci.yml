@@ -31,7 +31,7 @@ jobs:
         run: pnpm knip
 
       - name: ⚙️ Check package engines
-        run: pnpm installed-check
+        run: pnpm installed-check -d
 
   test:
     runs-on: ubuntu-latest
