@@ -32,6 +32,7 @@
     "@antfu/eslint-config": "latest",
     "@vitest/coverage-v8": "latest",
     "bumpp": "latest",
+    "changelogithub": "latest",
     "eslint": "latest",
     "installed-check": "latest",
     "knip": "latest",
