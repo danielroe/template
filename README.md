@@ -38,9 +38,9 @@ Published under [MIT License](./LICENCE).
 
 <!-- Badges -->
 
-[npm-version-src]: https://img.shields.io/npm/v/package-name?style=flat-square
-[npm-version-href]: https://npmjs.com/package/package-name
-[npm-downloads-src]: https://img.shields.io/npm/dm/package-name?style=flat-square
+[npm-version-src]: https://npmx.dev/api/registry/badge/version/package-name
+[npm-version-href]: https://npmx.dev/package/package-name
+[npm-downloads-src]: https://npmx.dev/api/registry/badge/downloads/package-name
 [npm-downloads-href]: https://npm.chart.dev/package-name
 [github-actions-src]: https://img.shields.io/github/actions/workflow/status/danielroe/package-name/ci.yml?branch=main&style=flat-square
 [github-actions-href]: https://github.com/danielroe/package-name/actions?query=workflow%3Aci
