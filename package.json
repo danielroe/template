@@ -50,9 +50,6 @@
     "unbuild": "latest",
     "vitest": "latest"
   },
-  "resolutions": {
-    "package-name": "link:."
-  },
   "simple-git-hooks": {
     "pre-commit": "npx nano-staged"
   },
