@@ -52,7 +52,7 @@
     "knip": "latest",
     "nano-staged": "1.0.2",
     "simple-git-hooks": "latest",
-    "tsdown": "0.22.0",
+    "tsdown": "0.22.2",
     "typescript": "latest",
     "vitest": "latest"
   },
