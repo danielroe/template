@@ -8,10 +8,16 @@
   "repository": "danielroe/package-name",
   "sideEffects": false,
   "exports": {
-    ".": "./dist/index.mjs"
+    ".": "./src/index.ts",
+    "./package.json": "./package.json"
   },
-  "main": "./dist/index.mjs",
-  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "publishConfig": {
+    "exports": {
+      ".": "./dist/index.mjs",
+      "./package.json": "./package.json"
+    }
+  },
   "typesVersions": {
     "*": {
       "*": [
@@ -23,7 +29,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "unbuild",
+    "build": "tsdown",
     "dev": "vitest dev",
     "lint": "eslint . --fix",
     "prepare": "simple-git-hooks",
@@ -46,8 +52,8 @@
     "knip": "latest",
     "nano-staged": "1.0.2",
     "simple-git-hooks": "latest",
+    "tsdown": "0.22.0",
     "typescript": "latest",
-    "unbuild": "latest",
     "vitest": "latest"
   },
   "simple-git-hooks": {
