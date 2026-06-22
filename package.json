@@ -2,7 +2,7 @@
   "name": "package-name",
   "type": "module",
   "version": "0.0.0",
-  "packageManager": "pnpm@11.7.0",
+  "packageManager": "pnpm@11.8.0",
   "description": "",
   "license": "MIT",
   "repository": "danielroe/package-name",
@@ -52,7 +52,7 @@
     "knip": "latest",
     "nano-staged": "1.0.2",
     "simple-git-hooks": "latest",
-    "tsdown": "0.22.2",
+    "tsdown": "0.22.3",
     "typescript": "latest",
     "vitest": "latest"
   },
