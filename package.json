@@ -2,7 +2,7 @@
   "name": "package-name",
   "type": "module",
   "version": "0.0.0",
-  "packageManager": "pnpm@11.10.0",
+  "packageManager": "pnpm@11.13.0",
   "description": "",
   "license": "MIT",
   "repository": "danielroe/package-name",
@@ -41,16 +41,16 @@
     "test:types": "tsc --noEmit"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "latest",
-    "@vitest/coverage-v8": "latest",
-    "eslint": "latest",
-    "installed-check": "latest",
-    "knip": "latest",
+    "@antfu/eslint-config": "9.1.0",
+    "@vitest/coverage-v8": "4.1.10",
+    "eslint": "10.7.0",
+    "installed-check": "10.0.1",
+    "knip": "6.26.0",
     "nano-staged": "1.0.2",
-    "simple-git-hooks": "latest",
-    "tsdown": "0.22.3",
-    "typescript": "latest",
-    "vitest": "latest"
+    "simple-git-hooks": "2.13.1",
+    "tsdown": "0.22.7",
+    "typescript": "6.0.3",
+    "vitest": "4.1.10"
   },
   "simple-git-hooks": {
     "pre-commit": "npx nano-staged"
