@@ -6,4 +6,4 @@ allowBuilds:
   simple-git-hooks: true
 
 overrides:
-  package-name: "link:."
+  package-name: "workspace:*"
