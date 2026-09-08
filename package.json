@@ -16,7 +16,10 @@
   },
   "description": "",
   "license": "MIT",
-  "repository": "danielroe/package-name",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielroe/package-name.git"
+  },
   "sideEffects": false,
   "exports": {
     ".": "./src/index.ts",
@@ -53,23 +56,25 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "9.3.0",
+    "@arethetypeswrong/core": "0.18.5",
     "@vitest/coverage-v8": "5.0.0",
     "eslint": "10.10.0",
     "installed-check": "11.0.0",
     "knip": "6.34.0",
     "nano-staged": "1.0.2",
     "pkg-pr-new": "0.0.88",
+    "publint": "0.3.24",
     "simple-git-hooks": "2.14.0",
     "tsdown": "0.22.14",
     "typescript": "6.0.3",
     "vitest": "5.0.0"
   },
   "simple-git-hooks": {
-    "pre-commit": "npx nano-staged"
+    "pre-commit": "pnpm nano-staged"
   },
   "nano-staged": {
     "*.{js,ts,mjs,cjs,json,.*rc}": [
-      "npx eslint --fix"
+      "pnpm eslint --fix"
     ]
   }
 }
