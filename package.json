@@ -55,7 +55,7 @@
     "test:types": "tsc --noEmit"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "9.3.0",
+    "@antfu/eslint-config": "9.5.1",
     "@arethetypeswrong/core": "0.18.5",
     "@vitest/coverage-v8": "5.0.0",
     "eslint": "10.10.0",
@@ -65,7 +65,7 @@
     "pkg-pr-new": "0.0.88",
     "publint": "0.3.24",
     "simple-git-hooks": "2.14.0",
-    "tsdown": "0.22.14",
+    "tsdown": "0.23.0",
     "typescript": "6.0.3",
     "vitest": "5.0.0"
   },
