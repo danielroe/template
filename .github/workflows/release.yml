@@ -37,6 +37,9 @@ jobs:
         )
       )
     runs-on: ubuntu-latest
+    concurrency:
+      group: release-pr
+      cancel-in-progress: true
     permissions:
       contents: write # push the `release/vX.Y.Z` branch and delete superseded ones
       pull-requests: write # create a release PR, update its body, close superseded PRs
