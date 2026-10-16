@@ -5,12 +5,12 @@
   "devEngines": {
     "runtime": {
       "name": "node",
-      "version": "24.21.0",
+      "version": "24.22.0",
       "onFail": "download"
     },
     "packageManager": {
       "name": "pnpm",
-      "version": "12.9.1",
+      "version": "12.14.0",
       "onFail": "download"
     }
   },
@@ -59,17 +59,17 @@
     "test:types": "tsc --noEmit"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "9.3.0",
+    "@antfu/eslint-config": "9.5.1",
     "@arethetypeswrong/core": "0.18.5",
     "@vitest/coverage-v8": "5.0.3",
     "eslint": "10.12.0",
     "installed-check": "11.0.0",
     "knip": "6.41.0",
     "nano-staged": "1.0.2",
-    "pkg-pr-new": "0.0.88",
+    "pkg-pr-new": "0.0.91",
     "publint": "0.3.25",
     "simple-git-hooks": "2.14.0",
-    "tsdown": "0.22.14",
+    "tsdown": "0.23.1",
     "typescript": "6.0.3",
     "vitest": "5.0.3"
   },
