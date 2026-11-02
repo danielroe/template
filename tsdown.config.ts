@@ -1,7 +1,7 @@
 import { defineConfig } from 'tsdown'
 
 export default defineConfig({
-  dts: { oxc: true },
+  dts: { generator: 'oxc' },
   exports: { devExports: true },
   publint: true,
   attw: {
